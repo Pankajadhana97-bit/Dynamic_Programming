@@ -16,4 +16,5 @@ int main(){
 	int m = str.size();
 	cout << LCS(s, str,n,m);
 	return 0;
+	//pankaj adhana
 }
