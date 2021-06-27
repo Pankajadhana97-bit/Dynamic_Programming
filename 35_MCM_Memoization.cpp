@@ -14,7 +14,7 @@ int MCM(int i,int j,vector<int>&arr,vector<vector<int>>&dp){
 			min=temp;
 		  }
 		} 
-		return dp[i][j]=min;
+		return dp[i][j]=min;//git init
 }
 int init(int n,vector<int>&arr){
 	int i = 1;
