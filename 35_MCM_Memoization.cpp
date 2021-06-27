@@ -3,18 +3,16 @@ using namespace std;
 
 int MCM(int i,int j,vector<int>&arr,vector<vector<int>>&dp){
 	int temp;
-	int min = INT_MAX;
+	int mn = INT_MAX;
 	if (i >= j)
 		return 0;
 	if (dp[i][j] != -1)
 		return dp[i][j];
 	for (int k=i;k<j;k++){
 		temp = MCM(i, k, arr, dp) + MCM(k + 1, j, arr, dp)+(arr[i-1]*arr[k]*arr[j]);
-	if(temp<min){
-			min=temp;
-		  }
+		mn = min(temp, mn);
 		} 
-		return dp[i][j]=min;//git init
+		return dp[i][j]=mn;//git init
 }
 int init(int n,vector<int>&arr){
 	int i = 1;
