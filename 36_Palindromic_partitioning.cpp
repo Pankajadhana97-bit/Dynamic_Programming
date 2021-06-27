@@ -1,5 +1,4 @@
 //it is the recursive approach of the palindromic partitioning of the string 
-
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -13,7 +12,7 @@ isPalindrome(int i,int j,string s){   //this funtion checks that it is a palindr
 	return true;
 }
 
-int palindromicpartition(string s,int i,int j){      //this basically partioned the string into palindromes
+int palindromicpartition(string s,int i,int j){      //this basically partioned the string into palindrome
 	int temp, mn = INT_MAX;
 	if( i==j or isPalindrome(i,j,s))     //if the string is already a palindrome or reaches base condition return 0
 		return 0;
