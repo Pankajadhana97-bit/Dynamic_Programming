@@ -14,7 +14,7 @@ int equalPartition(int N, int arr[])
             dp[i][0]=true;
         }
         for(int i=1;i<=K;i++){
-            dp[0][i]=false;
+               dp[0][i]=false;
         }
         for(int i=1;i<=N;i++){
             for(int j=1;j<=K;j++){
